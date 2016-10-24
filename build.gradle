@@ -1,0 +1,29 @@
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+	
+ compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.53.0'
+ compile group: 'org.seleniumhq.selenium', name: 'selenium-server', version: '2.39.0'
+   //compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '2.53.0'
+ compile group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '2.53.0'
+compile group: 'org.seleniumhq.selenium', name: 'selenium-htmlunit-driver', version: '2.52.0'
+compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '2.53.0'
+
+
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+}
